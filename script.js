@@ -436,8 +436,8 @@
       '<ul class="facts">' + facts + "</ul>" +
       (admin() ? '<button class="add-btn" data-act="add-fact">+ fact</button>' : "") +
       '</div><div class="poster"><div class="poster-frame">' +
-      '<img src="assets/me.jpg" alt="' + esc(d.profile.name) + '" class="poster-img" />' +
-      '<span class="poster-fallback">photo goes at<br /><code>assets/me.jpg</code></span>' +
+      '<img src="me.jpg" alt="' + esc(d.profile.name) + '" class="poster-img" />' +
+      '<span class="poster-fallback">photo goes at<br /><code>me.jpg</code></span>' +
       '</div><p class="poster-cap">the resident</p></div></div>';
   };
 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>K. V. Akhilesh — Come In</title>
+<meta name="description" content="A hand-drawn portfolio you walk through. K. V. Akhilesh, B.Tech student and competitive programmer." />
+<meta property="og:title" content="K. V. Akhilesh — Come In" />
+<meta property="og:description" content="Knock on the door, walk the corridor, open a room." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="zig-wrap">
+    <svg class="zigzag" viewBox="0 0 400 280" aria-hidden="true">
+      <path d="M200,8 L132,52 L268,96 L132,140 L268,184 L150,228 L200,272" />
+    </svg>
+    <div class="pct" id="pct">0%</div>
+  </div>
+  <p class="pre-cap">sharpening the pencils…</p>
+</div>
+
+<!-- ============ SCENE 1 — THE MANSION ============ -->
+<section class="scene scene-outside is-active" id="sceneOutside">
+  <div class="outside-wrap">
+
+    <svg class="house-svg" viewBox="0 0 560 380" role="img" aria-label="A hand-drawn mansion">
+      <!-- sky wash + sun -->
+      <circle class="sun" cx="486" cy="52" r="26" />
+      <path class="ln thin cloud" d="M60,54 q10,-16 26,-8 q10,-18 30,-6 q18,-2 16,14 z" />
+      <path class="ln thin cloud" d="M150,36 q8,-13 21,-6 q9,-14 24,-4 q15,-2 13,12 z" />
+
+      <!-- chimneys (behind the roofs) -->
+      <g>
+        <path class="ln brick" d="M196,112 h22 v34 h-22 z" />
+        <path class="ln" d="M192,112 h30 v-8 h-30 z" />
+        <path class="ln brick" d="M336,104 h22 v42 h-22 z" />
+        <path class="ln" d="M332,104 h30 v-8 h-30 z" />
+        <g class="smoke">
+          <circle class="ln thin smoke-puff" cx="347" cy="96" r="7" />
+          <circle class="ln thin smoke-puff" cx="347" cy="96" r="9" />
+          <circle class="ln thin smoke-puff" cx="347" cy="96" r="6" />
+        </g>
+      </g>
+
+      <!-- wing roofs -->
+      <path class="ln roof" d="M56,196 L104,152 L152,196 Z" />
+      <path class="ln roof" d="M408,196 L456,152 L504,196 Z" />
+
+      <!-- main roof -->
+      <path class="ln roof" d="M128,152 L280,72 L432,152 Z" />
+      <path class="ln thin roofline" d="M160,152 L280,89 M192,152 L280,106 M224,152 L280,123" />
+
+      <!-- pediment window -->
+      <circle class="ln glass" cx="280" cy="126" r="15" />
+      <path class="ln thin" d="M265,126 h30 M280,111 v30" />
+
+      <!-- wings -->
+      <path class="ln wall" d="M60,196 h92 v134 h-92 z" />
+      <path class="ln wall" d="M408,196 h92 v134 h-92 z" />
+
+      <!-- main block -->
+      <path class="ln wall" d="M140,152 h280 v178 h-280 z" />
+      <path class="ln thin" d="M140,222 h280" />
+
+      <!-- upper windows -->
+      <g class="windows">
+        <rect class="ln glass" x="166" y="170" width="42" height="40" rx="2" />
+        <path class="ln thin" d="M187,170 v40 M166,190 h42" />
+        <rect class="ln glass" x="352" y="170" width="42" height="40" rx="2" />
+        <path class="ln thin" d="M373,170 v40 M352,190 h42" />
+        <rect class="ln glass" x="240" y="170" width="34" height="40" rx="2" />
+        <path class="ln thin" d="M257,170 v40 M240,190 h34" />
+        <rect class="ln glass" x="286" y="170" width="34" height="40" rx="2" />
+        <path class="ln thin" d="M303,170 v40 M286,190 h34" />
+      </g>
+
+      <!-- wing windows -->
+      <g class="windows">
+        <rect class="ln glass" x="80" y="222" width="46" height="42" rx="2" />
+        <path class="ln thin" d="M103,222 v42 M80,243 h46" />
+        <rect class="ln glass" x="434" y="222" width="46" height="42" rx="2" />
+        <path class="ln thin" d="M457,222 v42 M434,243 h46" />
+        <path class="ln thin" d="M80,290 h46 M434,290 h46" />
+      </g>
+
+      <!-- lower windows either side of the portico -->
+      <g class="windows">
+        <rect class="ln glass" x="166" y="246" width="42" height="52" rx="2" />
+        <path class="ln thin" d="M187,246 v52 M166,272 h42" />
+        <rect class="ln glass" x="352" y="246" width="42" height="52" rx="2" />
+        <path class="ln thin" d="M373,246 v52 M352,272 h42" />
+      </g>
+
+      <!-- portico -->
+      <path class="ln roof" d="M222,244 L280,206 L338,244 Z" />
+      <path class="ln column" d="M231,244 h13 v76 h-13 z" />
+      <path class="ln column" d="M316,244 h13 v76 h-13 z" />
+      <path class="ln" d="M226,320 h23 M311,320 h23" />
+
+      <!-- the front door (click me) -->
+      <g class="frontdoor" id="frontDoor" role="button" tabindex="0"
+         aria-label="Knock on the door and go inside">
+        <path class="ln doorface" d="M256,252 h48 v68 h-48 z" />
+        <path class="ln thin" d="M280,252 v68" />
+        <path class="ln thin doorpanel" d="M261,258 h14 v22 h-14 z M285,258 h14 v22 h-14 z" />
+        <path class="ln thin doorpanel" d="M261,288 h14 v24 h-14 z M285,288 h14 v24 h-14 z" />
+        <circle class="ln knobdot" cx="275" cy="288" r="2.6" />
+        <circle class="ln knobdot" cx="285" cy="288" r="2.6" />
+      </g>
+
+      <!-- nameplate -->
+      <rect class="ln plate" x="244" y="232" width="72" height="15" rx="2" />
+      <text x="280" y="243" text-anchor="middle" class="plate-text">AKHILESH</text>
+
+      <!-- steps -->
+      <path class="ln step" d="M244,320 h72 v5 h-72 z" />
+      <path class="ln step" d="M236,325 h88 v5 h-88 z" />
+
+      <!-- ground, path, garden -->
+      <path class="ln ground" d="M14,330 h532" />
+      <path class="ln pathway" d="M236,330 L214,372 h132 L324,330 z" />
+      <path class="ln thin" d="M228,348 h104 M221,362 h118" />
+
+      <g class="garden">
+        <path class="ln bush" d="M40,330 c0,-20 14,-28 27,-23 c7,-14 27,-11 29,5 c12,0 13,18 0,18 z" />
+        <path class="ln bush" d="M120,330 c0,-14 10,-20 19,-16 c5,-10 19,-8 21,4 c9,0 9,12 0,12 z" />
+        <path class="ln bush" d="M400,330 c0,-14 10,-20 19,-16 c5,-10 19,-8 21,4 c9,0 9,12 0,12 z" />
+        <path class="ln bush" d="M474,330 c0,-20 14,-28 27,-23 c7,-14 27,-11 29,5 c12,0 13,18 0,18 z" />
+        <!-- little tree -->
+        <path class="ln trunk" d="M534,330 v-30" />
+        <circle class="ln leaf" cx="534" cy="288" r="20" />
+      </g>
+
+      <!-- lamps -->
+      <g>
+        <path class="ln" d="M204,330 v-40" />
+        <path class="ln lamplit" d="M197,290 h14 l-4,-11 h-6 z" />
+        <path class="ln" d="M356,330 v-40" />
+        <path class="ln lamplit" d="M349,290 h14 l-4,-11 h-6 z" />
+      </g>
+    </svg>
+
+    <div class="house-title">
+      <p class="kicker">come in, the kettle&rsquo;s on</p>
+      <h1>Akhilesh&rsquo;s Mansion</h1>
+      <p class="sub"><span id="typed"></span><span class="caret">|</span></p>
+    </div>
+
+    <button class="knock" id="knockBtn">knock on the door</button>
+    <p class="hint">…or just click the door</p>
+  </div>
+</section>
+
+<!-- ============ SCENE 2 — THE CORRIDOR ============ -->
+<section class="scene scene-corridor" id="sceneCorridor" aria-hidden="true">
+  <div class="viewport">
+    <div class="tunnel" id="tunnel" style="--z:0px">
+      <div class="plane floor"><div class="rug"></div></div>
+      <div class="plane ceiling" id="ceiling"></div>
+      <div class="plane wall wall-left" id="wallLeft"></div>
+      <div class="plane wall wall-right" id="wallRight"></div>
+
+      <!-- far end: the way out -->
+      <div class="plane endwall">
+        <div class="exit-frame">
+          <button class="exit-door" id="exitDoorEnd" aria-label="Leave the building">
+            <span class="exit-leaf"><span class="exit-knob"></span></span>
+            <span class="exit-sign">WAY OUT</span>
+          </button>
+          <div class="exit-glow"></div>
+        </div>
+      </div>
+
+      <!-- behind you: the door you came in through -->
+      <div class="plane startwall">
+        <div class="start-door">
+          <span class="start-sign">you came in this way</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="haze"></div>
+  <div class="vignette"></div>
+
+  <div class="progress-rail"><i id="progressBar"></i></div>
+
+  <div class="hud">
+    <button class="hud-btn" id="exitHouse">&larr; back outside</button>
+
+    <div class="walk-hint" id="walkHint">
+      <span>scroll to walk down the corridor</span>
+      <span class="keys">↑ ↓ walk · click a door to enter</span>
+      <span class="arrow">↓</span>
+    </div>
+
+    <div class="room-menu" id="roomMenu">
+      <button class="hud-btn" id="roomMenuBtn">all rooms ▾</button>
+      <div class="room-menu-list" id="roomMenuList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOATING CONTROLS ============ -->
+<button class="sound-btn" id="soundBtn" aria-pressed="false" title="Toggle sound">
+  <span class="s-on">🔊</span><span class="s-off">🔈</span>
+</button>
+
+<button class="who-btn" id="whoBtn" title="Owner sign-in">
+  <span class="who-dot"></span> is that you, Akhilesh?
+</button>
+
+<!-- ============ ADMIN BAR ============ -->
+<div class="admin-bar" id="adminBar">
+  <span class="admin-tag">🔑 owner mode</span>
+  <span class="admin-hint">click any dashed text to edit it</span>
+  <div class="admin-actions">
+    <button id="adminExport" title="Download your edits">Export</button>
+    <label class="admin-file">Import<input type="file" id="adminImport" accept="application/json" /></label>
+    <button id="adminPin" title="Generate a hash for a new password">Change PIN</button>
+    <button id="adminReset" title="Discard all edits">Reset</button>
+    <button id="adminOut">Sign out</button>
+  </div>
+</div>
+
+<!-- ============ LOGIN ============ -->
+<div class="login-dialog" id="loginDialog" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="loginHead">
+  <form class="login-card" id="loginForm">
+    <h2 id="loginHead">prove it&rsquo;s your house</h2>
+    <p class="login-sub">Only the owner gets to rearrange the rooms.</p>
+
+    <label>Email
+      <input type="email" id="loginEmail" autocomplete="off" placeholder="your email" required />
+    </label>
+    <label>Password
+      <input type="password" id="loginPass" autocomplete="off" placeholder="your password" required />
+    </label>
+
+    <p class="login-note" id="loginNote" role="status"></p>
+
+    <div class="login-actions">
+      <button type="button" id="loginCancel">cancel</button>
+      <button type="submit" class="primary">unlock</button>
+    </div>
+
+    <p class="login-warn">
+      This lock lives in the browser — it keeps visitors out, but it isn&rsquo;t bank-grade
+      security, and your edits save on this device only.
+    </p>
+  </form>
+</div>
+
+<!-- ============ ROOM CARD ============ -->
+<div class="room-overlay" id="roomOverlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="roomTitle">
+  <div class="room-panel" id="roomPanel">
+    <div class="room-inner">
+      <div class="room-head">
+        <div>
+          <p class="room-kicker" id="roomKicker">room</p>
+          <h2 id="roomTitle">Room</h2>
+        </div>
+        <div class="room-nav">
+          <button class="nav-arrow" id="prevRoom" aria-label="Previous room">&larr;</button>
+          <button class="nav-arrow" id="nextRoom" aria-label="Next room">&rarr;</button>
+          <button class="close-btn" id="closeRoom" aria-label="Close room">&times;</button>
+        </div>
+      </div>
+      <div class="room-body" id="roomBody"></div>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="stats.js"></script>
+<script src="admin.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
